@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Interface : NSObject
+@interface Interface : NSObject{
+    
+}
+
+-(void)exibirMenu;
+-(void)exibirRank;
+-(void)exibirSequencia;
+-(void)exibirDerrota;
+-(void)exibirAvanco;
+-(void)exibirMensagemDeCadastro;
 
 @end

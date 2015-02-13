@@ -146,8 +146,11 @@
 				513F1D8F1A8E722D00F79761 /* Tabuleiro.m in Sources */,
 				525277E71A8E6CDA000CC5B5 /* Interface.m in Sources */,
 				EB290B0F1A8E65DB002F6373 /* main.m in Sources */,
-				525277E81A8E6CDA000CC5B5 /* Jogador.m in Sources */,
-				525277E11A8E6C45000CC5B5 /* Rank.m in Sources */,
+				1584655B1A8E72E3009DB20B /* Fila.m in Sources */,
+				158465581A8E6BB6009DB20B /* Tabuleiro.m in Sources */,
+				24B1B4D01A8E762700A201EA /* Jogador.m in Sources */,
+				24B1B4D11A8E762700A201EA /* Rank.m in Sources */,
+				24B1B4BC1A8E67D100A201EA /* Interface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

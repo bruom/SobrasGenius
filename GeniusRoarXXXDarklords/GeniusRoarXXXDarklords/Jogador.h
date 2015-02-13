@@ -11,11 +11,13 @@
 @interface Jogador : NSObject
 
 {
-    NSString *username;
+    NSString *nomeUsuario;
     int mPontos;
     int qJogos;
 }
 
-
+@property NSString *nomeUsuario;
+@property int mPontos;
+@property int qPontos;
 
 @end
