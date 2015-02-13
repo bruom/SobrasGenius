@@ -12,22 +12,32 @@
 #import "Tabuleiro.h"
 #import "Jogador.h"
 
-
 @implementation Interface
 
--(void)jogar{
+-(void)exibirMenu{
+    NSLog(@"Para jogar selecione 1");
+    NSLog(@"Para se registrar selecione 2");
+    NSLog(@"Para ir para o rank selecione 3");
+    NSLog(@"Para sair selecione 4");
+}
+
+-(void)exibirRank{
     
 }
 
--(void)registrar{
+-(void)exibirSequencia{
     
 }
 
--(void)irParaRanking{
-    
+-(void)exibirDerrota{
+    NSLog(@"Você PERDEU! %@", nomeDeUsuario);
 }
 
--(void)selecionarCor:(int)cor{
+-(void)exibirAvanco{
+    NSLog(@"Você avançou um nível!");
+}
+
+-(void)exibirMensagemDeCadastro{
     
 }
 

@@ -12,9 +12,11 @@
     
 }
 
--(void)jogar;
--(void)registrar;
--(void)irParaRanking;
--(void)selecionarCor: (int)cor;
+-(void)exibirMenu;
+-(void)exibirRank;
+-(void)exibirSequencia;
+-(void)exibirDerrota;
+-(void)exibirAvanco;
+-(void)exibirMensagemDeCadastro;
 
 @end
