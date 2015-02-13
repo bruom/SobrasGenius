@@ -15,14 +15,14 @@
 @implementation Interface
 
 -(int)exibirMenu{
-    NSString *menu;
     NSLog(@"Para jogar selecione 1");
     NSLog(@"Para se registrar selecione 2");
     NSLog(@"Para ir para o rank selecione 3");
     NSLog(@"Para sair selecione 4");
-    scanf("%s", &menu);
-    return (int) &menu;
     
+    int opcao;
+    scanf("%d", &opcao);
+    return opcao;
 }
 
 -(void)exibirRank{
