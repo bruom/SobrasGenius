@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Interface : NSObject
+@interface Interface : NSObject{
+    
+}
+
+-(void)jogar;
+-(void)registrar;
+-(void)irParaRanking;
+-(void)selecionarCor: (int)cor;
 
 @end
