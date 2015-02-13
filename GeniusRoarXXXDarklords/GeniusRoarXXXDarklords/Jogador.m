@@ -9,5 +9,5 @@
 #import "Jogador.h"
 
 @implementation Jogador
-
+@synthesize nomeUsuario, mPontos, qPontos;
 @end
