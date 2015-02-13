@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Tabuleiro : NSObject
+@interface Tabuleiro : NSObject{
+    
+}
 
 @end
