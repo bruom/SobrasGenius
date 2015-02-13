@@ -9,9 +9,7 @@
 #import "Jogador.h"
 
 @implementation Jogador{
-    NSString *nome;
-    int PontuacaoMax;
-    int partidas;
+    
 }
 
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		513F1D8C1A8E700F00F79761 /* Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 513F1D8B1A8E700F00F79761 /* Rank.m */; };
+		513F1D8F1A8E722D00F79761 /* Tabuleiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 513F1D8E1A8E722D00F79761 /* Tabuleiro.m */; };
 		525277E11A8E6C45000CC5B5 /* Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 525277E01A8E6C45000CC5B5 /* Rank.m */; };
 		525277E71A8E6CDA000CC5B5 /* Interface.m in Sources */ = {isa = PBXBuildFile; fileRef = 525277E41A8E6CDA000CC5B5 /* Interface.m */; };
 		525277E81A8E6CDA000CC5B5 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 525277E61A8E6CDA000CC5B5 /* Jogador.m */; };
@@ -26,9 +28,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		158465521A8E67A8009DB20B /* Tabuleiro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tabuleiro.h; sourceTree = "<group>"; };
-		158465531A8E67A8009DB20B /* Tabuleiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tabuleiro.m; sourceTree = "<group>"; };
-		525277DF1A8E6C45000CC5B5 /* Rank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rank.h; sourceTree = "<group>"; };
+		513F1D8A1A8E700F00F79761 /* Rank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rank.h; sourceTree = "<group>"; };
+		513F1D8B1A8E700F00F79761 /* Rank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rank.m; sourceTree = "<group>"; };
+		513F1D8D1A8E722D00F79761 /* Tabuleiro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tabuleiro.h; sourceTree = "<group>"; };
+		513F1D8E1A8E722D00F79761 /* Tabuleiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tabuleiro.m; sourceTree = "<group>"; };
 		525277E01A8E6C45000CC5B5 /* Rank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rank.m; sourceTree = "<group>"; };
 		525277E21A8E6CDA000CC5B5 /* Cores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cores.h; sourceTree = "<group>"; };
 		525277E31A8E6CDA000CC5B5 /* Interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interface.h; sourceTree = "<group>"; };
@@ -69,14 +72,16 @@
 		EB290B0D1A8E65DB002F6373 /* GeniusRoarXXXDarklords */ = {
 			isa = PBXGroup;
 			children = (
+				513F1D8D1A8E722D00F79761 /* Tabuleiro.h */,
+				513F1D8E1A8E722D00F79761 /* Tabuleiro.m */,
+				513F1D8A1A8E700F00F79761 /* Rank.h */,
+				513F1D8B1A8E700F00F79761 /* Rank.m */,
 				525277E21A8E6CDA000CC5B5 /* Cores.h */,
 				525277E31A8E6CDA000CC5B5 /* Interface.h */,
 				525277E41A8E6CDA000CC5B5 /* Interface.m */,
 				525277E51A8E6CDA000CC5B5 /* Jogador.h */,
 				525277E61A8E6CDA000CC5B5 /* Jogador.m */,
 				EB290B0E1A8E65DB002F6373 /* main.m */,
-				513F1D871A8E6BE300F79761 /* Jogador.h */,
-				513F1D881A8E6BE300F79761 /* Jogador.m */,
 			);
 			path = GeniusRoarXXXDarklords;
 			sourceTree = "<group>";
@@ -137,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513F1D8C1A8E700F00F79761 /* Rank.m in Sources */,
+				513F1D8F1A8E722D00F79761 /* Tabuleiro.m in Sources */,
 				525277E71A8E6CDA000CC5B5 /* Interface.m in Sources */,
 				EB290B0F1A8E65DB002F6373 /* main.m in Sources */,
 				525277E81A8E6CDA000CC5B5 /* Jogador.m in Sources */,
