@@ -10,4 +10,39 @@
 
 @implementation Rank
 
+-(instancetype)init{
+    self = [super init];
+    if(self){
+
+    }
+    return self;
+}
+
+-(Jogador *)selecionarUmJogador:(NSString *)nome{
+    return nil;
+}
+
+-(void)adicionarUmJogador:(Jogador *)jogador{
+
+}
+
+-(Jogador *)pegarPrimeiroLugar{
+    return nil;
+}
+
+-(Jogador *)pegarJogadorAtual{
+    return nil;
+}
+
+-(void)removerJogador:(NSString *)nome{
+
+}
+
+-(void)zerarListaDeJogadores{
+
+}
+
+@synthesize jogadorAtual;
+
+
 @end
