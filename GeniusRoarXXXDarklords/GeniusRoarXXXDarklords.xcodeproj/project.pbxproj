@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		158465541A8E67A8009DB20B /* Tabuleiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 158465531A8E67A8009DB20B /* Tabuleiro.m */; };
-		5266B77D1A8E68F3006BF107 /* Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 5266B77C1A8E68F3006BF107 /* Rank.m */; };
+		525277E11A8E6C45000CC5B5 /* Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 525277E01A8E6C45000CC5B5 /* Rank.m */; };
 		EB290B0F1A8E65DB002F6373 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB290B0E1A8E65DB002F6373 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +26,8 @@
 /* Begin PBXFileReference section */
 		158465521A8E67A8009DB20B /* Tabuleiro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tabuleiro.h; sourceTree = "<group>"; };
 		158465531A8E67A8009DB20B /* Tabuleiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tabuleiro.m; sourceTree = "<group>"; };
-		5266B77B1A8E68F3006BF107 /* Rank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rank.h; path = ../Rank.h; sourceTree = "<group>"; };
-		5266B77C1A8E68F3006BF107 /* Rank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rank.m; path = ../Rank.m; sourceTree = "<group>"; };
+		525277DF1A8E6C45000CC5B5 /* Rank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rank.h; sourceTree = "<group>"; };
+		525277E01A8E6C45000CC5B5 /* Rank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rank.m; sourceTree = "<group>"; };
 		EB290B0B1A8E65DB002F6373 /* GeniusRoarXXXDarklords */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GeniusRoarXXXDarklords; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB290B0E1A8E65DB002F6373 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,16 +62,11 @@
 		EB290B0D1A8E65DB002F6373 /* GeniusRoarXXXDarklords */ = {
 			isa = PBXGroup;
 			children = (
-				513F1D801A8E6B3F00F79761 /* Cores.h */,
-				513F1D811A8E6B3F00F79761 /* Interface.h */,
-				513F1D821A8E6B3F00F79761 /* Interface.m */,
-				513F1D831A8E6B3F00F79761 /* Tabuleiro.h */,
-				513F1D841A8E6B3F00F79761 /* Tabuleiro.m */,
 				EB290B0E1A8E65DB002F6373 /* main.m */,
-				5266B77B1A8E68F3006BF107 /* Rank.h */,
-				5266B77C1A8E68F3006BF107 /* Rank.m */,
 				158465521A8E67A8009DB20B /* Tabuleiro.h */,
 				158465531A8E67A8009DB20B /* Tabuleiro.m */,
+				525277DF1A8E6C45000CC5B5 /* Rank.h */,
+				525277E01A8E6C45000CC5B5 /* Rank.m */,
 			);
 			path = GeniusRoarXXXDarklords;
 			sourceTree = "<group>";
@@ -133,10 +127,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5266B77D1A8E68F3006BF107 /* Rank.m in Sources */,
 				EB290B0F1A8E65DB002F6373 /* main.m in Sources */,
-				513F1D861A8E6B3F00F79761 /* Tabuleiro.m in Sources */,
-				513F1D851A8E6B3F00F79761 /* Interface.m in Sources */,
+				525277E11A8E6C45000CC5B5 /* Rank.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
