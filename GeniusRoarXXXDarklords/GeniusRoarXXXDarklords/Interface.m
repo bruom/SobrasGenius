@@ -26,12 +26,11 @@
     int opcao;
     do{
         NSLog(@"Para jogar selecione 1");
-        NSLog(@"Para se registrar selecione 2");
-        NSLog(@"Para ir para o rank selecione 3");
-        NSLog(@"Para sair selecione 4");
+        NSLog(@"Para ir para o rank selecione 2");
+        NSLog(@"Para sair selecione 3");
     
     scanf("%d", &opcao);
-    } while (opcao < 1 || opcao > 4);
+    } while (opcao < 1 || opcao > 3);
     
     return opcao;
 }
