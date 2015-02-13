@@ -9,11 +9,13 @@
 #ifndef GeniusRoarXXXDarklords_Cores_h
 #define GeniusRoarXXXDarklords_Cores_h
 
-typedef enum Cores {
+enum Cores {
     vermelho,
     amarelo,
     azul,
     verde
-}Cor;
+};
+
+typedef enum Cores Cor;
 
 #endif

@@ -11,13 +11,13 @@
 
 @implementation Tabuleiro
 
--(instancetype)init{
+-(instancetype)initWithJogador:(NSString *)jogador{
     self = [super init];
     
     if(self){
         fSis = [[Fila alloc]init];
         fJog = [[Fila alloc]init];
-        
+        Jogador = nil;//METODO DO RANK PARA ACESSAR JOGADOR
         score = 0;
     }
     
@@ -49,8 +49,8 @@
 
 -(int)jogarRodada{  // rodada é um ciclo composto por: jogo mostra sequencia - jogador repete sequencia
     Fila *fAux = [[Fila alloc]init];
-    BOOL fim = false;
     int cont=0;
+    [self gerarComando];
     while(![fSis vazio]){
         //printar a cor e tal -> exibir cor;
         cont++;
@@ -71,7 +71,17 @@
 }
 
 -(void)jogarPartida{
-    
+    BOOL fim = false;
+    while(!fim){
+        int res = [self jogarRodada];
+        if(res==-1)
+            fim=true;
+    }
+    [self encerrarPartida];
+}
+
+-(void)encerrarPartida{
+    //METODOS DO RANKING PARA ARMAZENAR RESULTADOS DO JOGADOR
 }
 
 @end
