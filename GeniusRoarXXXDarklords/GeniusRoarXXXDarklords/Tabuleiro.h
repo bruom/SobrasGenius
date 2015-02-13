@@ -10,15 +10,17 @@
 #import "Fila.h"
 #import "Cores.h"
 #import "Jogador.h"
+#import "Rank.h"
 
 @interface Tabuleiro : NSObject{
     Fila *fSis; //fila para guardar sequencia de imputs gerada pelo jogo
     Fila *fJog; //fila para guardar inputs corretos do usuario
     int score;
     Jogador *j;
+    Rank* r;
 }
 
--(instancetype)initWithJogador:(NSString*)jogador;
+-(instancetype)initWithJogador:(NSString*)jogador andRank:(Rank*)ra;
 
 -(void) gerarComando;
 

@@ -11,13 +11,14 @@
 
 @implementation Tabuleiro
 
--(instancetype)initWithJogador:(NSString *)jogador{
+-(instancetype)initWithJogador:(NSString *)jogador andRank:(Rank *)ra{
     self = [super init];
     
     if(self){
         fSis = [[Fila alloc]init];
         fJog = [[Fila alloc]init];
-        Jogador = nil;//METODO DO RANK PARA ACESSAR JOGADOR
+        r = ra;
+        j = [r selecionarUmJogador:jogador];
         score = 0;
     }
     
@@ -81,7 +82,11 @@
 }
 
 -(void)encerrarPartida{
-    //METODOS DO RANKING PARA ARMAZENAR RESULTADOS DO JOGADOR
+    [j setQPontos:[j qPontos]+1];
+    if(score > [j mPontos]){
+        [j setMPontos:score];
+    }
+    [r adicionarUmJogadorExistente:j];
 }
 
 @end
