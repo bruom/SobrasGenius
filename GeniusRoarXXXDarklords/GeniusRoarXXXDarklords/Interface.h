@@ -12,9 +12,12 @@
     
 }
 
--(void)jogar;
--(void)registrar;
--(void)irParaRanking;
--(void)selecionarCor: (int)cor;
+-(int)exibirMenu;
+-(void)exibirRank;
+-(void)exibirSequencia;
+-(void)exibirEscolhaDeCor;
+-(void)exibirDerrota;
+-(void)exibirAvanco;
+-(NSString *)exibirMensagemDeCadastro;
 
 @end
