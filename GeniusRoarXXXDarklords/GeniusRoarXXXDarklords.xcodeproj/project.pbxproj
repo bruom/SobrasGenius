@@ -10,6 +10,9 @@
 		158465581A8E6BB6009DB20B /* Tabuleiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 158465571A8E6BB6009DB20B /* Tabuleiro.m */; };
 		1584655B1A8E72E3009DB20B /* Fila.m in Sources */ = {isa = PBXBuildFile; fileRef = 1584655A1A8E72E3009DB20B /* Fila.m */; };
 		24B1B4BC1A8E67D100A201EA /* Interface.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B1B4BB1A8E67D100A201EA /* Interface.m */; };
+		24B1B4CF1A8E762700A201EA /* Interface.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B1B4CA1A8E762700A201EA /* Interface.m */; };
+		24B1B4D01A8E762700A201EA /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B1B4CC1A8E762700A201EA /* Jogador.m */; };
+		24B1B4D11A8E762700A201EA /* Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B1B4CE1A8E762700A201EA /* Rank.m */; };
 		EB290B0F1A8E65DB002F6373 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB290B0E1A8E65DB002F6373 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -31,8 +34,13 @@
 		158465571A8E6BB6009DB20B /* Tabuleiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tabuleiro.m; sourceTree = "<group>"; };
 		158465591A8E72E3009DB20B /* Fila.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fila.h; sourceTree = "<group>"; };
 		1584655A1A8E72E3009DB20B /* Fila.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fila.m; sourceTree = "<group>"; };
-		24B1B4BA1A8E67D100A201EA /* Interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interface.h; sourceTree = "<group>"; };
 		24B1B4BB1A8E67D100A201EA /* Interface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interface.m; sourceTree = "<group>"; };
+		24B1B4C91A8E762700A201EA /* Interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interface.h; sourceTree = "<group>"; };
+		24B1B4CA1A8E762700A201EA /* Interface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interface.m; sourceTree = "<group>"; };
+		24B1B4CB1A8E762700A201EA /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
+		24B1B4CC1A8E762700A201EA /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
+		24B1B4CD1A8E762700A201EA /* Rank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rank.h; sourceTree = "<group>"; };
+		24B1B4CE1A8E762700A201EA /* Rank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rank.m; sourceTree = "<group>"; };
 		EB290B0B1A8E65DB002F6373 /* GeniusRoarXXXDarklords */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GeniusRoarXXXDarklords; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB290B0E1A8E65DB002F6373 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +75,12 @@
 		EB290B0D1A8E65DB002F6373 /* GeniusRoarXXXDarklords */ = {
 			isa = PBXGroup;
 			children = (
+				24B1B4C91A8E762700A201EA /* Interface.h */,
+				24B1B4CA1A8E762700A201EA /* Interface.m */,
+				24B1B4CB1A8E762700A201EA /* Jogador.h */,
+				24B1B4CC1A8E762700A201EA /* Jogador.m */,
+				24B1B4CD1A8E762700A201EA /* Rank.h */,
+				24B1B4CE1A8E762700A201EA /* Rank.m */,
 				158465591A8E72E3009DB20B /* Fila.h */,
 				1584655A1A8E72E3009DB20B /* Fila.m */,
 				158465551A8E6BB6009DB20B /* Cores.h */,
@@ -133,12 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				525278031A8E71CF000CC5B5 /* Rank.m in Sources */,
-				525278041A8E71CF000CC5B5 /* Tabuleiro.m in Sources */,
-				525277E71A8E6CDA000CC5B5 /* Interface.m in Sources */,
+				24B1B4CF1A8E762700A201EA /* Interface.m in Sources */,
 				EB290B0F1A8E65DB002F6373 /* main.m in Sources */,
 				1584655B1A8E72E3009DB20B /* Fila.m in Sources */,
 				158465581A8E6BB6009DB20B /* Tabuleiro.m in Sources */,
+				24B1B4D01A8E762700A201EA /* Jogador.m in Sources */,
+				24B1B4D11A8E762700A201EA /* Rank.m in Sources */,
 				24B1B4BC1A8E67D100A201EA /* Interface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
