@@ -9,7 +9,7 @@
 #import "Rank.h"
 
 @implementation Rank
-
+// ctor
 -(instancetype)init{
     self = [super init];
     if(self){
@@ -19,13 +19,13 @@
 }
 
 -(Jogador *)selecionarUmJogador:(NSString *)nome{
-    int pos = [self pegarPosicaoDoJogadorPeloNome:nome];
-    if(pos != -1){
+    int pos = [self pegarPosicaoDoJogadorPeloNome:nome]; // Verifica se um jogador existe. Se pos = -1 => Jogador não está presente no rank
+    if(pos != -1){  // Se jogador já se encontra no rank
         jogadorAtual = [rank objectAtIndex:pos];
-        [rank removeObjectAtIndex:pos];
-        return jogadorAtual;
+        [rank removeObjectAtIndex:pos]; // Remove do rank
+        return jogadorAtual;    // Retorna o jogador
     }
-    [self adicionarUmJogadorNovo:nome];
+    [self adicionarUmJogadorNovo:nome]; // Se jogador não existe no rank, instancia um novo.
     return jogadorAtual;
 }
 
@@ -33,6 +33,7 @@
     int pontuacao = [jogador mPontos];
     int size = (int)[rank count];
     int i = 0;
+    // Verifica qual posição o jogador será inserido.
     while (i < size && [(Jogador *)[rank objectAtIndex:i] mPontos] > pontuacao);
     [rank insertObject:jogador atIndex:i];
 }
