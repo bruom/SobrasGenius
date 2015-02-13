@@ -7,15 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Interface.h"
+#import "Cores.h"
+#import "Rank.h"
+#import "Tabuleiro.h"
+#import "Jogador.h"
 
 @interface Interface : NSObject{
+    Jogador *a;
     
 }
-
+-(instancetype)init;
 -(int)exibirMenu;
 -(void)exibirRank;
 -(void)exibirSequencia;
--(void)exibirEscolhaDeCor;
+-(int)exibirEscolhaDeCor;
 -(void)exibirDerrota;
 -(void)exibirAvanco;
 -(NSString *)exibirMensagemDeCadastro;
