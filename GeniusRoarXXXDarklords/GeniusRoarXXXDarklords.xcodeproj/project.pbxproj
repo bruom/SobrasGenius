@@ -73,8 +73,6 @@
 				158465561A8E6BB6009DB20B /* Tabuleiro.h */,
 				158465571A8E6BB6009DB20B /* Tabuleiro.m */,
 				EB290B0E1A8E65DB002F6373 /* main.m */,
-				24B1B4BA1A8E67D100A201EA /* Interface.h */,
-				24B1B4BB1A8E67D100A201EA /* Interface.m */,
 			);
 			path = GeniusRoarXXXDarklords;
 			sourceTree = "<group>";
@@ -135,6 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525278031A8E71CF000CC5B5 /* Rank.m in Sources */,
+				525278041A8E71CF000CC5B5 /* Tabuleiro.m in Sources */,
+				525277E71A8E6CDA000CC5B5 /* Interface.m in Sources */,
 				EB290B0F1A8E65DB002F6373 /* main.m in Sources */,
 				1584655B1A8E72E3009DB20B /* Fila.m in Sources */,
 				158465581A8E6BB6009DB20B /* Tabuleiro.m in Sources */,
