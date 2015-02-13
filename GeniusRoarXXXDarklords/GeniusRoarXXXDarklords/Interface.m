@@ -46,7 +46,7 @@
 }
 
 -(void)exibirDerrota{
-    NSLog(@"Você PERDEU! %@, sua pontuação foi: %i", nomeUsuario, pontos);
+    NSLog(@"Você perdeu! %@, sua pontuação foi: %i", nomeUsuario, pontos);
 }
 
 -(void)exibirAvanco{
