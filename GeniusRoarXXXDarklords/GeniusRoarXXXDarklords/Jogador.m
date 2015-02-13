@@ -8,8 +8,10 @@
 
 #import "Jogador.h"
 
-@implementation Jogador{
+@implementation Jogador
     
-}
+
+@synthesize nomeUsuario, mPontos, qPontos;
+
 
 @end

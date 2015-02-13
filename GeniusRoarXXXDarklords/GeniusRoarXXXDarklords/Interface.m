@@ -22,15 +22,17 @@
 }
 
 -(void)exibirRank{
-    
+    NSLog(@"Rank:");
+    //Adicionar metodo do rank que exiba a ordem    
 }
 
 -(void)exibirSequencia{
+    //Adicionar metodo que faça a exibição das cores
     
 }
 
 -(void)exibirDerrota{
-    NSLog(@"Você PERDEU! %@", [ nomeUsuario]);
+    NSLog(@"Você PERDEU!");
 }
 
 -(void)exibirAvanco{
@@ -38,7 +40,7 @@
 }
 
 -(void)exibirMensagemDeCadastro{
-    
+    NSLog(@"Digite o nome do seu usuário: ");
 }
 
 @end
