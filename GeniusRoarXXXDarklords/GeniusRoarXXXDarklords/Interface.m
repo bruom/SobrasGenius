@@ -54,9 +54,11 @@
       NSLog(@"Digite 1 para amarelo");
       NSLog(@"Digite 2 para azul");
       NSLog(@"Digite 3 para verde");
-    scanf("%d", &opcaoCor);
-        } while (opcaoCor < 0 || opcaoCor > 4);
+      scanf("%d", &opcaoCor);
+        } while (opcaoCor < 1 || opcaoCor > 4);
+    
     return opcaoCor;
+    
 }
 
 -(void)exibirDerrota{
