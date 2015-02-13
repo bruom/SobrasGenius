@@ -19,7 +19,7 @@
 }
 -(instancetype)init;
 -(int)exibirMenu;
--(void)exibirRank;
+-(void)exibirRank:(Fila*)fila;
 -(void)exibirSequencia;
 -(int)exibirEscolhaDeCor;
 -(void)exibirDerrota;

@@ -11,6 +11,7 @@
 #import "Rank.h"
 #import "Tabuleiro.h"
 #import "Jogador.h"
+#import "Fila.h"
 
 
 @implementation Interface
@@ -36,10 +37,22 @@
     return opcao;
 }
 
--(void)exibirRank{
+-(void)exibirRank:(Fila*)fila{
     NSLog(@"Rank:");
-    //Adicionar metodo do rank que exiba a ordem    
-}
+    int i = 1;
+
+    while(![fila vazio]){
+     
+        Jogador *aux = [fila ler];
+        
+        NSLog(@"1-%d lugar, Jogador %5@",i, aux);
+        [fila desenfileirar];
+        i++;
+    
+        
+    }
+     
+     }
 
 -(void)exibirSequencia{
     //Adicionar metodo que faça a exibição das cores
