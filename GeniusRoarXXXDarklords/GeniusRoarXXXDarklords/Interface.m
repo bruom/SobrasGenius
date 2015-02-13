@@ -30,7 +30,7 @@
 }
 
 -(void)exibirDerrota{
-    NSLog(@"Você PERDEU! %@", nomeDeUsuario);
+    NSLog(@"Você PERDEU! %@", nomeUsuario);
 }
 
 -(void)exibirAvanco{
@@ -40,5 +40,6 @@
 -(void)exibirMensagemDeCadastro{
     
 }
+
 
 @end
