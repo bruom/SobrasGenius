@@ -15,13 +15,16 @@
 @implementation Interface
 
 -(int)exibirMenu{
-    NSLog(@"Para jogar selecione 1");
-    NSLog(@"Para se registrar selecione 2");
-    NSLog(@"Para ir para o rank selecione 3");
-    NSLog(@"Para sair selecione 4");
+    int opcao=0;
+    do{
+        NSLog(@"Para jogar selecione 1");
+        NSLog(@"Para se registrar selecione 2");
+        NSLog(@"Para ir para o rank selecione 3");
+        NSLog(@"Para sair selecione 4");
     
-    int opcao;
     scanf("%d", &opcao);
+    } while (opcao < 1 || opcao > 4);
+    
     return opcao;
 }
 
