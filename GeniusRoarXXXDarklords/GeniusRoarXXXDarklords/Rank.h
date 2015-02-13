@@ -10,4 +10,10 @@
 
 @interface Rank : NSObject
 
+{
+    NSMutableArray *ranking;
+}
+
+
+
 @end
