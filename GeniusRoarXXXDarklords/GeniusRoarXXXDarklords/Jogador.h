@@ -16,6 +16,7 @@
     int qJogos;
 }
 
+
 @property NSString *nomeUsuario;
 @property int mPontos;
 @property int qPontos;

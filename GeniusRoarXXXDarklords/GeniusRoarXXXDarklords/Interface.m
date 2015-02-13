@@ -22,10 +22,12 @@
 }
 
 -(void)exibirRank{
-    
+    NSLog(@"Rank:");
+    //Adicionar metodo do rank que exiba a ordem    
 }
 
 -(void)exibirSequencia{
+    //Adicionar metodo que faça a exibição das cores
     
 }
 
@@ -38,7 +40,7 @@
 }
 
 -(void)exibirMensagemDeCadastro{
-    
+    NSLog(@"Digite o nome do seu usuário: ");
 }
 
 
