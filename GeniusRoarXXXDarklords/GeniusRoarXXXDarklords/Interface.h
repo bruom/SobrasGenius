@@ -15,6 +15,7 @@
 -(void)exibirMenu;
 -(void)exibirRank;
 -(void)exibirSequencia;
+-(void)exibirEscolhaDeCor;
 -(void)exibirDerrota;
 -(void)exibirAvanco;
 -(void)exibirMensagemDeCadastro;

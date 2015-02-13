@@ -31,8 +31,15 @@
     
 }
 
+-(void)exibirEscolhaDeCor{
+    NSLog(@"Digite 0 para vermelho");
+    NSLog(@"Digite 1 para amarelo");
+    NSLog(@"Digite 2 para azul");
+    NSLog(@"Digite 3 para verde");
+}
+
 -(void)exibirDerrota{
-    NSLog(@"Você PERDEU!");
+    NSLog(@"Você PERDEU! %@, sua pontuação foi: %d", nomeUsuario, pontos);
 }
 
 -(void)exibirAvanco{
@@ -42,5 +49,6 @@
 -(void)exibirMensagemDeCadastro{
     NSLog(@"Digite o nome do seu usuário: ");
 }
+
 
 @end
