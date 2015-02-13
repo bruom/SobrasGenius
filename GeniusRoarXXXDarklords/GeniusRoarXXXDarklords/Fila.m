@@ -51,17 +51,30 @@
     return [elementos containsObject:q];
 }
 
--(void)inverter:(Pilha *)p{
-    while(![self vazio]){
-        [p empilhar:[self ler]];
-        [self desenfileirar];
+-(void)juntarFila:(Fila *)f{
+    if([f vazio])
+        return;
+    while(![f vazio]){
+        [self enfileirar:[f ler]];
+        [f desenfileirar];
     }
-    
-    while(![p vazio]){
-        [self enfileirar:[p topo]];
-        [p desempilhar];
-    }
-    
 }
+
+-(int)size{
+    return [elementos count];
+}
+
+//-(void)inverter:(Pilha *)p{
+//    while(![self vazio]){
+//        [p empilhar:[self ler]];
+//        [self desenfileirar];
+//    }
+//    
+//    while(![p vazio]){
+//        [self enfileirar:[p topo]];
+//        [p desempilhar];
+//    }
+//    
+//}
 
 @end
