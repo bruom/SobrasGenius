@@ -20,6 +20,7 @@
         r = ra;
         j = [r selecionarUmJogador:jogador];
         score = 0;
+        inter = [[Interface alloc]init];
     }
     
     return self;
@@ -87,6 +88,7 @@
         [j setMPontos:score];
     }
     [r adicionarUmJogadorExistente:j];
+    [inter exibirDerrota];
 }
 
 @end

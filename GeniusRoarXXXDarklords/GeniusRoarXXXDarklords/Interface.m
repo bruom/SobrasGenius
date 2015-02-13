@@ -57,11 +57,10 @@
         } while (opcaoCor < 1 || opcaoCor > 4);
     
     return opcaoCor;
-    
 }
 
 -(void)exibirDerrota{
-    NSLog(@"Você perdeu! %@:", [a nomeUsuario]);
+    NSLog(@"Você perdeu %@!", [a nomeUsuario]);
           }
 
 -(void)exibirAvanco{

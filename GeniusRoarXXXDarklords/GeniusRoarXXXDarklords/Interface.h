@@ -15,8 +15,8 @@
 
 @interface Interface : NSObject{
     Jogador *a;
-    
 }
+
 -(instancetype)init;
 -(int)exibirMenu;
 -(void)exibirRank;
