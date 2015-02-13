@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Jogador.h"
+#import "Fila.h"
 
 @interface Rank : NSObject{
     NSMutableArray *rank;
@@ -18,16 +19,19 @@
 
 -(Jogador *)selecionarUmJogador:(NSString *)nome;
 
--(void)adicionarUmJogador:(Jogador *)jogador;
+-(void)adicionarUmJogadorExistente:(Jogador *)jogador;
+
+-(void)adicionarUmJogadorNovo:(NSString *)nome;
 
 -(Jogador *)pegarPrimeiroLugar;
 
--(Jogador *)pegarJogadorAtual;
+-(void)removerJogador:(Jogador *)jogador;
 
--(void)removerJogador:(NSString *)nome;
+-(int)pegarPosicaoDoJogador:(Jogador *)jogador;
 
--(void)zerarListaDeJogadores;
+-(int)pegarPosicaoDoJogadorPeloNome:(NSString *)nome;
 
+-(Fila *)pegarRankDeJogadores;
 
 @property Jogador *jogadorAtual;
 
