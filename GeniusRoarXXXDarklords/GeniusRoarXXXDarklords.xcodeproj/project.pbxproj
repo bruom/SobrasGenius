@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24B1B4C71A8E720D00A201EA /* Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B1B4C41A8E720D00A201EA /* Rank.m */; };
+		24B1B4C81A8E720D00A201EA /* Tabuleiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B1B4C61A8E720D00A201EA /* Tabuleiro.m */; };
 		525277E11A8E6C45000CC5B5 /* Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 525277E01A8E6C45000CC5B5 /* Rank.m */; };
 		525277E71A8E6CDA000CC5B5 /* Interface.m in Sources */ = {isa = PBXBuildFile; fileRef = 525277E41A8E6CDA000CC5B5 /* Interface.m */; };
 		525277E81A8E6CDA000CC5B5 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 525277E61A8E6CDA000CC5B5 /* Jogador.m */; };

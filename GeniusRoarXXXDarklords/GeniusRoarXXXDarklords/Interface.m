@@ -7,7 +7,28 @@
 //
 
 #import "Interface.h"
+#import "Cores.h"
+#import "Rank.h"
+#import "Tabuleiro.h"
+#import "Jogador.h"
+
 
 @implementation Interface
+
+-(void)jogar{
+    
+}
+
+-(void)registrar{
+    
+}
+
+-(void)irParaRanking{
+    
+}
+
+-(void)selecionarCor:(int)cor{
+    
+}
 
 @end
