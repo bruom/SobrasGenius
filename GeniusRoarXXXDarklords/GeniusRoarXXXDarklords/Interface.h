@@ -12,12 +12,12 @@
     
 }
 
--(void)exibirMenu;
+-(int)exibirMenu;
 -(void)exibirRank;
 -(void)exibirSequencia;
 -(void)exibirEscolhaDeCor;
 -(void)exibirDerrota;
 -(void)exibirAvanco;
--(void)exibirMensagemDeCadastro;
+-(NSString *)exibirMensagemDeCadastro;
 
 @end

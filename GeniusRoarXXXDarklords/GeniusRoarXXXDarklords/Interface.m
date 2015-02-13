@@ -14,11 +14,15 @@
 
 @implementation Interface
 
--(void)exibirMenu{
+-(int)exibirMenu{
+    NSString *menu;
     NSLog(@"Para jogar selecione 1");
     NSLog(@"Para se registrar selecione 2");
     NSLog(@"Para ir para o rank selecione 3");
     NSLog(@"Para sair selecione 4");
+    scanf("%s", &menu);
+    return (int) &menu;
+    
 }
 
 -(void)exibirRank{
@@ -39,15 +43,19 @@
 }
 
 -(void)exibirDerrota{
-    NSLog(@"Você PERDEU! %@, sua pontuação foi: %d", nomeUsuario, pontos);
+    NSLog(@"Você PERDEU! %@, sua pontuação foi: %i", nomeUsuario, pontos);
 }
 
 -(void)exibirAvanco{
     NSLog(@"Você avançou um nível!");
 }
 
--(void)exibirMensagemDeCadastro{
+-(NSString *)exibirMensagemDeCadastro{
+    char *nome;
     NSLog(@"Digite o nome do seu usuário: ");
+    scanf("%s",nome);
+    NSString *s = [[NSString alloc]initWithFormat:@"%s", nome];
+    return s;
 }
 
 
