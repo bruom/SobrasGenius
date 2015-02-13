@@ -14,31 +14,49 @@
 
 @implementation Interface
 
--(void)exibirMenu{
+-(int)exibirMenu{
     NSLog(@"Para jogar selecione 1");
     NSLog(@"Para se registrar selecione 2");
     NSLog(@"Para ir para o rank selecione 3");
     NSLog(@"Para sair selecione 4");
+    
+    int opcao;
+    scanf("%d", &opcao);
+    return opcao;
 }
 
 -(void)exibirRank{
-    
+    NSLog(@"Rank:");
+    //Adicionar metodo do rank que exiba a ordem    
 }
 
 -(void)exibirSequencia{
+    //Adicionar metodo que faça a exibição das cores
     
 }
 
+-(void)exibirEscolhaDeCor{
+    NSLog(@"Digite 0 para vermelho");
+    NSLog(@"Digite 1 para amarelo");
+    NSLog(@"Digite 2 para azul");
+    NSLog(@"Digite 3 para verde");
+}
+
 -(void)exibirDerrota{
-    NSLog(@"Você PERDEU! %@", [ nomeUsuario]);
+    NSLog(@"Você PERDEU! %@, sua pontuação foi: %i", nomeUsuario, pontos);
 }
 
 -(void)exibirAvanco{
     NSLog(@"Você avançou um nível!");
 }
 
--(void)exibirMensagemDeCadastro{
-    
+-(NSString *)exibirMensagemDeCadastro{
+    char *nome;
+    NSLog(@"Digite o nome do seu usuário: ");
+    scanf("%s",nome);
+    NSString *s = [[NSString alloc]initWithFormat:@"%s", nome];
+    return s;
 }
+
 
 @end
