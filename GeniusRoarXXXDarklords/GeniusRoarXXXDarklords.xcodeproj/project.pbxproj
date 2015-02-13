@@ -75,10 +75,8 @@
 				525277E51A8E6CDA000CC5B5 /* Jogador.h */,
 				525277E61A8E6CDA000CC5B5 /* Jogador.m */,
 				EB290B0E1A8E65DB002F6373 /* main.m */,
-				158465521A8E67A8009DB20B /* Tabuleiro.h */,
-				158465531A8E67A8009DB20B /* Tabuleiro.m */,
-				525277DF1A8E6C45000CC5B5 /* Rank.h */,
-				525277E01A8E6C45000CC5B5 /* Rank.m */,
+				513F1D871A8E6BE300F79761 /* Jogador.h */,
+				513F1D881A8E6BE300F79761 /* Jogador.m */,
 			);
 			path = GeniusRoarXXXDarklords;
 			sourceTree = "<group>";
