@@ -25,7 +25,8 @@
         [rank removeObjectAtIndex:pos];
         return jogadorAtual;
     }
-    return nil;
+    [self adicionarUmJogadorNovo:nome];
+    return jogadorAtual;
 }
 
 -(void)adicionarUmJogadorExistente:(Jogador *)jogador{

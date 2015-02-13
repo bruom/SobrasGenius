@@ -12,10 +12,18 @@
 #import "Tabuleiro.h"
 #import "Jogador.h"
 
+
 @implementation Interface
+-(instancetype)init{
+    self = [super init];
+    if(self){
+        Jogador *a= [[Jogador alloc] init];
+    }
+    return self;
+}
 
 -(int)exibirMenu{
-    int opcao=0;
+    int opcao;
     do{
         NSLog(@"Para jogar selecione 1");
         NSLog(@"Para se registrar selecione 2");
@@ -38,9 +46,9 @@
     
 }
 
--(void)exibirEscolhaDeCor{
+-(int)exibirEscolhaDeCor{
     
-    int opcaoCor=0;
+    int opcaoCor;
     do{
       NSLog(@"Digite 0 para vermelho");
       NSLog(@"Digite 1 para amarelo");
@@ -52,8 +60,8 @@
 }
 
 -(void)exibirDerrota{
-    NSLog(@"Você perdeu! %@, sua pontuação foi: %i", nomeUsuario, pontos);
-}
+    NSLog(@"Você perdeu! %@:", [a nomeUsuario]);
+          }
 
 -(void)exibirAvanco{
     NSLog(@"Você avançou um nível!");
@@ -66,6 +74,5 @@
     NSString *s = [[NSString alloc]initWithFormat:@"%s", nome];
     return s;
 }
-
 
 @end
