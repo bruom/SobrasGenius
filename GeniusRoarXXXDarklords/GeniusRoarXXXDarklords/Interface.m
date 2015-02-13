@@ -56,7 +56,9 @@
       NSLog(@"Digite 3 para verde");
       scanf("%d", &opcaoCor);
         } while (opcaoCor < 1 || opcaoCor > 4);
-        
+    
+    return opcaoCor;
+    
 }
 
 -(void)exibirDerrota{
