@@ -135,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5266B77D1A8E68F3006BF107 /* Rank.m in Sources */,
 				EB290B0F1A8E65DB002F6373 /* main.m in Sources */,
 				513F1D861A8E6B3F00F79761 /* Tabuleiro.m in Sources */,
 				513F1D891A8E6BE300F79761 /* Jogador.m in Sources */,
