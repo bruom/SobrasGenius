@@ -31,7 +31,6 @@
 		5266B77C1A8E68F3006BF107 /* Rank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rank.m; path = ../Rank.m; sourceTree = "<group>"; };
 		EB290B0B1A8E65DB002F6373 /* GeniusRoarXXXDarklords */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GeniusRoarXXXDarklords; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB290B0E1A8E65DB002F6373 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EB290B151A8E6815002F6373 /* Cores.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cores.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +63,11 @@
 		EB290B0D1A8E65DB002F6373 /* GeniusRoarXXXDarklords */ = {
 			isa = PBXGroup;
 			children = (
+				513F1D801A8E6B3F00F79761 /* Cores.h */,
+				513F1D811A8E6B3F00F79761 /* Interface.h */,
+				513F1D821A8E6B3F00F79761 /* Interface.m */,
+				513F1D831A8E6B3F00F79761 /* Tabuleiro.h */,
+				513F1D841A8E6B3F00F79761 /* Tabuleiro.m */,
 				EB290B0E1A8E65DB002F6373 /* main.m */,
 				5266B77B1A8E68F3006BF107 /* Rank.h */,
 				5266B77C1A8E68F3006BF107 /* Rank.m */,
@@ -131,7 +135,8 @@
 			files = (
 				5266B77D1A8E68F3006BF107 /* Rank.m in Sources */,
 				EB290B0F1A8E65DB002F6373 /* main.m in Sources */,
-				24B1B4BC1A8E67D100A201EA /* Interface.m in Sources */,
+				513F1D861A8E6B3F00F79761 /* Tabuleiro.m in Sources */,
+				513F1D851A8E6B3F00F79761 /* Interface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
