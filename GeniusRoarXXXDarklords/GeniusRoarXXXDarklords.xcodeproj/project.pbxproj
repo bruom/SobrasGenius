@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		158465541A8E67A8009DB20B /* Tabuleiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 158465531A8E67A8009DB20B /* Tabuleiro.m */; };
 		EB290B0F1A8E65DB002F6373 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB290B0E1A8E65DB002F6373 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		158465521A8E67A8009DB20B /* Tabuleiro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tabuleiro.h; sourceTree = "<group>"; };
+		158465531A8E67A8009DB20B /* Tabuleiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tabuleiro.m; sourceTree = "<group>"; };
 		EB290B0B1A8E65DB002F6373 /* GeniusRoarXXXDarklords */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GeniusRoarXXXDarklords; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB290B0E1A8E65DB002F6373 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				EB290B0E1A8E65DB002F6373 /* main.m */,
+				158465521A8E67A8009DB20B /* Tabuleiro.h */,
+				158465531A8E67A8009DB20B /* Tabuleiro.m */,
 			);
 			path = GeniusRoarXXXDarklords;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB290B0F1A8E65DB002F6373 /* main.m in Sources */,
+				158465541A8E67A8009DB20B /* Tabuleiro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +238,7 @@
 				EB290B141A8E65DB002F6373 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
