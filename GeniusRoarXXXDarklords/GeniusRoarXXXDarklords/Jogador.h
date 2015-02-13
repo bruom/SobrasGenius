@@ -10,4 +10,12 @@
 
 @interface Jogador : NSObject
 
+{
+    NSString *username;
+    int mPontos;
+    int qJogos;
+}
+
+
+
 @end
