@@ -16,4 +16,6 @@ enum Cores {
     verde
 };
 
+typedef enum Cores Cor;
+
 #endif

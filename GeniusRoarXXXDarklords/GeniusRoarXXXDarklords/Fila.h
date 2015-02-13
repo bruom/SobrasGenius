@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Pilha.h"
+//#import "Pilha.h"
 
 @interface Fila : NSObject
 {
@@ -20,6 +20,8 @@
 -(BOOL)vazio;
 -(void)imprimir;
 -(BOOL)busca:(id)q;
--(void)inverter:(Pilha*)p;
+-(void)juntarFila:(Fila*)f;
+-(int)size;
+//-(void)inverter:(Pilha*)p;
 
 @end
