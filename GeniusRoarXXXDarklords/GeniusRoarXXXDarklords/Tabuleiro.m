@@ -88,7 +88,7 @@
         [j setMPontos:score];
     }
     [r adicionarUmJogadorExistente:j];
-    [inter exibirDerrota];
+    [inter exibirDerrota:j:score];
 }
 
 @end

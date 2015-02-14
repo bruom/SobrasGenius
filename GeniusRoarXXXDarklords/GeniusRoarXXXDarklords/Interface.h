@@ -14,8 +14,10 @@
 #import "Jogador.h"
 
 @interface Interface : NSObject{
-    //A interface irá possuir um jogador a
+    /*A interface irá possuir um jogador a
     Jogador *a;
+     Removi esse atributo. Agora o método de mostrar a derrota recebe o atributo do próprio tabuleiro
+     */
 }
 
 //Inicializa o objeto
@@ -34,7 +36,7 @@
 -(int)exibirEscolhaDeCor;
 
 //Exibe uma mensagem de derrota do jogador
--(void)exibirDerrota;
+-(void)exibirDerrota: (Jogador *)j : (int)score;
 
 //Exibe uma mensagem para mostrar que o jogador acertou a sequëncia
 -(void)exibirAvanco;

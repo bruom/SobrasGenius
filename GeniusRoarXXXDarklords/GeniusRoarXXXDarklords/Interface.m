@@ -15,11 +15,7 @@
 
 @implementation Interface
 -(instancetype)init{
-    self = [super init];
-    if(self){
-        Jogador *a= [[Jogador alloc] init];
-    }
-    return self;
+
 }
 
 -(int)exibirMenu{
@@ -59,8 +55,8 @@
     return opcaoCor;
 }
 
--(void)exibirDerrota{
-    NSLog(@"Você perdeu %@!", [a nomeUsuario]);
+-(void)exibirDerrota:(Jogador *)j :(int)score{
+    NSLog(@"Você perdeu %@! Sua pontuação foi de %d pontos!", [j nomeUsuario], score);
           }
 
 -(void)exibirAvanco{
