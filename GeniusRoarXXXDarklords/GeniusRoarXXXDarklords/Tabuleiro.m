@@ -61,7 +61,9 @@
     fSis = fJog;
     fJog = fAux;
     while(cont>0){
-        int input = 0; //ler do usuario
+        //int input = 0; //ler do usuario
+        int input = [inter exibirEscolhaDeCor];
+        
         if(![self verificarInput:input]){
             [fJog juntarFila:fSis];
             score = [fJog size] -1;
