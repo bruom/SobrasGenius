@@ -24,7 +24,7 @@
 -(instancetype)init;
 
 //Exibe o menu no qual o usuário irá escolher se deseja jogar, ir para o rank ou sair
--(int)exibirMenu;
+-(void)exibirMenu;
 
 //Exibe o rank
 -(void)exibirRank;

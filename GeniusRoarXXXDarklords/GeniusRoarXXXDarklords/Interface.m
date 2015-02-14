@@ -15,10 +15,10 @@
 
 @implementation Interface
 -(instancetype)init{
-
+    return self;
 }
 
--(int)exibirMenu{
+-(void)exibirMenu{
     int opcao;
     do{
         NSLog(@"Para jogar selecione 1");
@@ -28,7 +28,21 @@
     scanf("%d", &opcao);
     } while (opcao < 1 || opcao > 3);
     
-    return opcao;
+    switch (opcao) {
+        case 1:
+            //Entra no jogo
+            break;
+        case 2:
+            //Exibe rank
+            [self exibirRank];
+            break;
+        case 3:
+            //Sai do jogo
+            break;
+            
+        default:
+            break;
+    }
 }
 
 -(void)exibirRank{
