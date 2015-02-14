@@ -39,7 +39,7 @@
 -(void)exibirDerrota: (Jogador *)j : (int)score;
 
 //Exibe uma mensagem para mostrar que o jogador acertou a sequëncia
--(void)exibirAvanco;
+-(void)exibirAvanco: (int)score;
 
 //Exibe a mensagem para o usuário realizar o cadastro
 -(NSString *)exibirMensagemDeCadastro;

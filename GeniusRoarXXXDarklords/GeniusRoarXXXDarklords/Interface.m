@@ -50,7 +50,7 @@
       NSLog(@"Digite 2 para azul");
       NSLog(@"Digite 3 para verde");
       scanf("%d", &opcaoCor);
-        } while (opcaoCor < 1 || opcaoCor > 4);
+        } while (opcaoCor < 0 || opcaoCor > 3);
     
     return opcaoCor;
 }
@@ -59,7 +59,7 @@
     NSLog(@"Você perdeu %@! Sua pontuação foi de %d pontos!", [j nomeUsuario], score);
           }
 
--(void)exibirAvanco{
+-(void)exibirAvanco: (int)score{
     NSLog(@"Você avançou um nível!");
 }
 

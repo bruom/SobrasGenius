@@ -71,6 +71,7 @@
         }
         cont--;
     }
+    [inter exibirAvanco: score];
     return 1;
 }
 
