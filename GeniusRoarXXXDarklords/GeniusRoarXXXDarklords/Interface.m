@@ -75,6 +75,8 @@
 
 -(void)exibirSequencia{
     //Adicionar metodo que faça a exibição das cores
+    //Fazer cores "piscarem"
+    //Exibir as cores ao invés dos numeros (?)
     
 }
 
@@ -98,6 +100,8 @@
 }
 
 -(NSString*)escolherJogador{
+    //falta o rank reconhecer se o usuário já está cadastrado ou não
+    
     char nome[30];
     NSLog(@"Digite o nome do seu usuário: ");
     scanf("%s",nome);
