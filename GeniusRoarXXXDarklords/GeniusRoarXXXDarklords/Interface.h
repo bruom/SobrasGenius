@@ -18,10 +18,11 @@
     Jogador *a;
      Removi esse atributo. Agora o método de mostrar a derrota recebe o atributo do próprio tabuleiro
      */
+    Rank *rank;
 }
 
 //Inicializa o objeto
--(instancetype)init;
+-(instancetype)initWithRank:(Rank*)r;
 
 //Exibe o menu no qual o usuário irá escolher se deseja jogar, ir para o rank ou sair
 -(void)exibirMenu;
@@ -42,6 +43,6 @@
 -(void)exibirAvanco: (int)score;
 
 //Exibe a mensagem para o usuário realizar o cadastro
--(NSString *)exibirMensagemDeCadastro;
+-(NSString *)escolherJogador;
 
 @end

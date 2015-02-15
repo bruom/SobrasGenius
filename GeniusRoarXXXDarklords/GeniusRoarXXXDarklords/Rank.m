@@ -68,9 +68,12 @@
     int size = (int)[rank count];
     for(int i = 0 ; i < size ; i++){
         Jogador *j = [rank objectAtIndex:i];
-        if([[j nomeUsuario] compare:nome])
+        if([[j nomeUsuario] compare:nome]){
+            NSLog(@"Nome de usuario encontrado!");
             return i;
+        }
     }
+    NSLog(@"Nome nao encontrado - novo jogador criado!");
     return -1;
 }
 
