@@ -15,7 +15,7 @@
 
 
 @implementation Interface
--(instancetype)init{
+-(instancetype)initWithRank:(Rank *)r{
     self = [super init];
     if(self){
         Jogador *a = [[Jogador alloc] init];
@@ -23,18 +23,37 @@
     return self;
 }
 
--(int)exibirMenu{
+-(void)exibirMenu{   //este metodo contem o loop principal do jogo,: depois de jogar ou verificar o rank, o usuario sempre volta pra esse menu
     int opcao;
-    do{
-        NSLog(@"Para jogar selecione 1");
-        NSLog(@"Para se registrar selecione 2");
-        NSLog(@"Para ir para o rank selecione 3");
-        NSLog(@"Para sair selecione 4");
+    Tabuleiro *tab;
+    while(true){
+        do{
+            NSLog(@"Para jogar selecione 1");
+            NSLog(@"Para ir para o rank selecione 2");
+            NSLog(@"Para sair selecione 3");
     
-    scanf("%d", &opcao);
-    } while (opcao < 1 || opcao > 4);
+            scanf("%d", &opcao);
+        } while (opcao < 1 || opcao > 3);
     
-    return opcao;
+        switch (opcao) {
+            case 1:
+                //Entra no jogo
+                tab = [[Tabuleiro alloc]initWithJogador:[self escolherJogador] andRank:rank andInterface:self];
+                [tab jogarPartida];
+                break;
+            case 2:
+                //Exibe rank
+                [self exibirRank];
+                break;
+            case 3:
+                //Sai do jogo
+                exit(0);
+                break;
+            
+            default:
+                break;
+        }
+    }
 }
 
 -(void)exibirRank:(Fila*)fila{
@@ -63,30 +82,27 @@
     
     int opcaoCor;
     do{
-      NSLog(@"Digite 0 para vermelho");
-      NSLog(@"Digite 1 para amarelo");
-      NSLog(@"Digite 2 para azul");
-      NSLog(@"Digite 3 para verde");
+      NSLog(@"1-VERMELHO   2-AMARELO   2-AZUL   3-VERDE");
       scanf("%d", &opcaoCor);
-        } while (opcaoCor < 1 || opcaoCor > 4);
+        } while (opcaoCor < 0 || opcaoCor > 3);
     
     return opcaoCor;
-    
 }
 
--(void)exibirDerrota{
-    NSLog(@"Você perdeu! %@:", [a nomeUsuario]);
+-(void)exibirDerrota:(Jogador *)j :(int)score{
+    NSLog(@"Você perdeu %@! Sua pontuação foi de %d pontos!", [j nomeUsuario], score);
           }
 
--(void)exibirAvanco{
+-(void)exibirAvanco: (int)score{
     NSLog(@"Você avançou um nível!");
 }
 
--(NSString *)exibirMensagemDeCadastro{
-    char *nome;
+-(NSString*)escolherJogador{
+    char nome[30];
     NSLog(@"Digite o nome do seu usuário: ");
     scanf("%s",nome);
     NSString *s = [[NSString alloc]initWithFormat:@"%s", nome];
+    NSLog(@"Usuario: %s", nome);
     return s;
 }
 
