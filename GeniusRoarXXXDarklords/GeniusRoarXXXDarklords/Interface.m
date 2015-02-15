@@ -18,7 +18,7 @@
 -(instancetype)init{
     self = [super init];
     if(self){
-        Jogador *a= [[Jogador alloc] init];
+        Jogador *a = [[Jogador alloc] init];
     }
     return self;
 }
