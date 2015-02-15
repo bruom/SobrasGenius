@@ -31,8 +31,7 @@
 -(NSObject*)ler{
     if([self vazio])
         return nil;
-    return [elementos firstObject];
-    
+    return [elementos firstObject];    
 }
 
 -(BOOL)vazio{

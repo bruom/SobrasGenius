@@ -20,9 +20,9 @@
      */
     Rank *rank;
 }
--(instancetype)init;
--(int)exibirMenu;
--(void)exibirRank:(Fila*)fila;
+-(instancetype)initWithRank: (Rank *)r;
+-(void)exibirMenu;
+-(void)exibirRank;
 -(void)exibirSequencia;
 
 //Exibe o menu para o usuário escolher a cor a ser digitada

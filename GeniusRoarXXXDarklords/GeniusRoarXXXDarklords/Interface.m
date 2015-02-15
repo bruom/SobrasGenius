@@ -7,18 +7,12 @@
 //
 
 #import "Interface.h"
-#import "Cores.h"
-#import "Rank.h"
-#import "Tabuleiro.h"
-#import "Jogador.h"
-#import "Fila.h"
-
 
 @implementation Interface
 -(instancetype)initWithRank:(Rank *)r{
     self = [super init];
     if(self){
-        Jogador *a = [[Jogador alloc] init];
+        rank = r;
     }
     return self;
 }
@@ -56,22 +50,23 @@
     }
 }
 
--(void)exibirRank:(Fila*)fila{
+-(void)exibirRank{
     NSLog(@"Rank:");
-    int i = 1;
-
-    while(![fila vazio]){
-     
-        Jogador *aux = [fila ler];
-        
-        NSLog(@"1-%d lugar, Jogador %5@",i, aux);
-        [fila desenfileirar];
-        i++;
-    
-        
+    Fila *jogadores = [rank pegarRankDeJogadores];
+    if([jogadores vazio])
+        NSLog(@"Não há ninguem aqui ainda!");
+    else{
+        NSLog(@"Ranking:");
+        int cont = 1;
+        while(![jogadores vazio]){
+            Jogador *j = [jogadores ler];
+            NSLog(@"%d - %@ - Highscore: %d", cont, [j nomeUsuario], [j mPontos]);
+            [jogadores desenfileirar];
+            cont++;
+        }
     }
-     
-     }
+    //Adicionar metodo do rank que exiba a ordem    
+}
 
 -(void)exibirSequencia{
     //Adicionar metodo que faça a exibição das cores
@@ -84,7 +79,7 @@
     
     int opcaoCor;
     do{
-      NSLog(@"1-VERMELHO   2-AMARELO   2-AZUL   3-VERDE");
+      NSLog(@"0-VERMELHO   1-AMARELO   2-AZUL   3-VERDE");
       scanf("%d", &opcaoCor);
         } while (opcaoCor < 0 || opcaoCor > 3);
     

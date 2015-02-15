@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Os Sobras. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+/*#import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
 
 @interface lalala : Rank
@@ -38,3 +38,4 @@
 }
 
 @end
+*/
