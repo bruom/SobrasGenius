@@ -23,9 +23,7 @@
     while(true){
         do{
             [self limpaTela];
-            NSLog(@"Para jogar selecione 1");
-            NSLog(@"Para ir para o rank selecione 2");
-            NSLog(@"Para sair selecione 3");
+            NSLog(@"Para jogar selecione 1 Para ir para o rank" "\n"" selecione 2 ""\n""Para sair selecione 3");
     
             scanf("%d", &opcao);
             fpurge(stdin);
