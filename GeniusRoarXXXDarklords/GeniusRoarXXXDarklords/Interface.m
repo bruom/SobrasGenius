@@ -109,8 +109,10 @@
     char nome[30];
     [self limpaTela];
     NSLog(@"Digite o nome do seu usuário: ");
+    
     scanf("%s",nome);
     NSString *s = [[NSString alloc]initWithFormat:@"%s", nome];
+    
     NSLog(@"Usuario: %s", nome);
     return s;
 }
