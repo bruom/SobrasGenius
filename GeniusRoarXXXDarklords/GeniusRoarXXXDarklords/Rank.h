@@ -43,6 +43,8 @@
 // Gera uma fila de jogadores, ordenado a partira das pontuações (de forma descendente).
 -(Fila *)pegarRankDeJogadores;
 
+-(NSString *)verificaUsuarioExistente:(NSString *)nome;
+
 @property Jogador *jogadorAtual;
 
 @end

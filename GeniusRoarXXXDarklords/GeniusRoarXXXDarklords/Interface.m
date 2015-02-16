@@ -97,12 +97,12 @@
     
     char nome[30];
     NSLog(@"Digite o nome do seu usuário: ");
-    
     scanf("%s",nome);
     NSString *s = [[NSString alloc]initWithFormat:@"%s", nome];
+    NSString *b=[rank verificaUsuarioExistente:s ];
+    NSLog(@"Usuario: %s", b);
     
-    NSLog(@"Usuario: %s", nome);
-    return s;
+    return b;
 }
 
 @end

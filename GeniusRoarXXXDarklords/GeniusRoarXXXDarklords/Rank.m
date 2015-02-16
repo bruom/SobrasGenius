@@ -84,6 +84,16 @@
     }
     return f;
 }
+-(NSString *) verificaUsuarioExistente:(NSString *)nome{
+    NSString *sp=sp;
+    
+    
+    for (int i=0; i<[rank count]; i++) {
+        if(nome==rank[i])
+            return sp;
+    }
+    return nome;
+}
 
 
 @synthesize jogadorAtual;
