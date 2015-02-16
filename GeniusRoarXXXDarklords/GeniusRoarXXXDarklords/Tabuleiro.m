@@ -29,12 +29,12 @@
 }
 
 -(void)gerarComando{
-    NSNumber *r = [[NSNumber alloc]initWithInt:arc4random_uniform(3)];
-    [fSis enfileirar:r];
+    NSNumber *n = [[NSNumber alloc]initWithInt:arc4random_uniform(3)];
+    [fSis enfileirar:n];
 }
 
 -(BOOL)verificarInput:(int)input{    // depois de MUITO penar para entender casting de inteiros em Objective-C, eis o codigo horrivel e funcional
-    NSNumber *number = [fSis ler];
+    NSNumber *number = (NSNumber *)[fSis ler];
     int goal = [number intValue];
     [fJog enfileirar:[fSis ler]];
     [fSis desenfileirar];
@@ -50,19 +50,38 @@
     [fSis desenfileirar];
 }
 
+-(void)clearWindow{
+    NSLog(@"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+}
+
 -(int)jogarRodada{  // rodada é um ciclo composto por: jogo mostra sequencia - jogador repete sequencia
     
     int cont=0;
     [self gerarComando];
-    
+    time_t t1, t2;
+    time(&t1);
+    int aux = 0;
     while(![fSis vazio]){
-        [self exibirCor];
-        cont++;
+        time(&t2);
+        if((t2 - t1) >= 1){
+            [self clearWindow];
+            NSLog((aux % 2 ? @"@" : @"#"));
+            [self exibirCor];
+            cont++;
+            aux++;
+            time(&t1);
+        }
     }
     fAux = fSis;
     fSis = fJog;
     fJog = fAux;
+    time(&t1);
+    time(&t2);
+    while(t2 - t1 < 1){ // Busy wait
+        time(&t2);
+    }
     while(cont>0){
+        [self clearWindow];
         int input = [inter exibirEscolhaDeCor];
         
         if(![self verificarInput:input]){  //se o jogador errar o input, ele perde: juntamos as filas e contamos o total -1, que é o score

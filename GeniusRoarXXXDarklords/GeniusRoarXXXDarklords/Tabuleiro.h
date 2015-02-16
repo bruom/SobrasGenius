@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <time.h>
 #import "Fila.h"
 #import "Cores.h"
 #import "Jogador.h"
@@ -31,6 +32,8 @@
 -(BOOL) verificarInput:(int)input;
 
 -(void) exibirCor;
+
+-(void)clearWindow;
 
 -(int) jogarRodada;
 

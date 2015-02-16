@@ -60,7 +60,7 @@
 }
 
 -(int)size{
-    return [elementos count];
+    return (int)[elementos count];
 }
 
 //-(void)inverter:(Pilha *)p{

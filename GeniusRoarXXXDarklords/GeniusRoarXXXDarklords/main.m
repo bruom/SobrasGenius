@@ -3,7 +3,7 @@
 //  GeniusRoarXXXDarklords
 //
 //  Created by Vitor Kawai Sala on 13/02/15.
-//  Copyright (c) 2015 Os Sobras. All rights reserved.
+//  Copyright (c) 2015 O1s Sobras. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

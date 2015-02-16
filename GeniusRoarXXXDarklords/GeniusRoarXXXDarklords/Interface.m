@@ -59,7 +59,7 @@
         NSLog(@"Ranking:");
         int cont = 1;
         while(![jogadores vazio]){
-            Jogador *j = [jogadores ler];
+            Jogador *j = (Jogador *)[jogadores ler];
             NSLog(@"%d - %@ - Highscore: %d", cont, [j nomeUsuario], [j mPontos]);
             [jogadores desenfileirar];
             cont++;
@@ -88,7 +88,7 @@
 
 -(void)exibirDerrota:(Jogador *)j :(int)score{
     NSLog(@"Você perdeu %@! Sua pontuação foi de %d pontos!", [j nomeUsuario], score);
-          }
+}
 
 -(void)exibirAvanco: (int)score{
     NSLog(@"Você avançou um nível!");
