@@ -22,11 +22,13 @@
     Tabuleiro *tab;
     while(true){
         do{
+            [self limpaTela];
             NSLog(@"Para jogar selecione 1");
             NSLog(@"Para ir para o rank selecione 2");
             NSLog(@"Para sair selecione 3");
     
             scanf("%d", &opcao);
+            fpurge(stdin);
         } while (opcao < 1 || opcao > 3);
     
         switch (opcao) {
@@ -51,6 +53,7 @@
 }
 
 -(void)exibirRank{
+    [self limpaTela];
     NSLog(@"Rank:");
     Fila *jogadores = [rank pegarRankDeJogadores];
     if([jogadores vazio])
@@ -65,6 +68,9 @@
             cont++;
         }
     }
+    NSLog(@"Pressione qualquer tecla para continuar.");
+    getchar();
+    fpurge(stdin);
     //Adicionar metodo do rank que exiba a ordem    
 }
 
@@ -79,14 +85,17 @@
     
     int opcaoCor;
     do{
-      NSLog(@"0-VERMELHO   1-AMARELO   2-AZUL   3-VERDE");
-      scanf("%d", &opcaoCor);
-        } while (opcaoCor < 0 || opcaoCor > 3);
+        NSLog(@"0-VERMELHO   1-AMARELO   2-AZUL   3-VERDE");
+        scanf("%d", &opcaoCor);
+        fpurge(stdin);
+
+    } while (opcaoCor < 0 || opcaoCor > 3);
     
     return opcaoCor;
 }
 
 -(void)exibirDerrota:(Jogador *)j :(int)score{
+    [self limpaTela];
     NSLog(@"Você perdeu %@! Sua pontuação foi de %d pontos!", [j nomeUsuario], score);
 }
 
@@ -98,11 +107,16 @@
     //falta o rank reconhecer se o usuário já está cadastrado ou não
     
     char nome[30];
+    [self limpaTela];
     NSLog(@"Digite o nome do seu usuário: ");
     scanf("%s",nome);
     NSString *s = [[NSString alloc]initWithFormat:@"%s", nome];
     NSLog(@"Usuario: %s", nome);
     return s;
+}
+
+-(void)limpaTela{
+    NSLog(@"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 }
 
 @end

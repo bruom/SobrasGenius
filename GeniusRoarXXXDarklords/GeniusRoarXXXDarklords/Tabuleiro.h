@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <time.h>
+#import <stdlib.h>
 #import "Fila.h"
 #import "Cores.h"
 #import "Jogador.h"
 #import "Rank.h"
+#import "Interface.h"
 @class Interface;
 
 
@@ -32,8 +34,6 @@
 -(BOOL) verificarInput:(int)input;
 
 -(void) exibirCor;
-
--(void)clearWindow;
 
 -(int) jogarRodada;
 

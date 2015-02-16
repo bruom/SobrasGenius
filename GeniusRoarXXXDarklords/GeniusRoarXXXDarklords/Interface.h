@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <stdlib.h>
 #import "Interface.h"
 #import "Cores.h"
 #import "Rank.h"
@@ -37,4 +38,5 @@
 //Exibe a mensagem para o usuário realizar o cadastro
 -(NSString *)escolherJogador;
 
+-(void)limpaTela;
 @end
