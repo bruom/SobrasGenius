@@ -22,9 +22,7 @@
     Tabuleiro *tab;
     while(true){
         do{
-            NSLog(@"Para jogar selecione 1");
-            NSLog(@"Para ir para o rank selecione 2");
-            NSLog(@"Para sair selecione 3");
+            NSLog(@"Para jogar selecione 1 Para ir para o rank" "\n"" selecione 2 ""\n""Para sair selecione 3");
     
             scanf("%d", &opcao);
         } while (opcao < 1 || opcao > 3);
@@ -87,7 +85,7 @@
 }
 
 -(void)exibirDerrota:(Jogador *)j :(int)score{
-    NSLog(@"Você perdeu %@! Sua pontuação foi de %d pontos!", [j nomeUsuario], score);
+    NSLog(@"Você perdeu: %@! Sua pontuação foi de: %d pontos!", [j nomeUsuario], score);
 }
 
 -(void)exibirAvanco: (int)score{
@@ -99,8 +97,10 @@
     
     char nome[30];
     NSLog(@"Digite o nome do seu usuário: ");
+    
     scanf("%s",nome);
     NSString *s = [[NSString alloc]initWithFormat:@"%s", nome];
+    
     NSLog(@"Usuario: %s", nome);
     return s;
 }
