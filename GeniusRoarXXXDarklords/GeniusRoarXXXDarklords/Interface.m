@@ -9,7 +9,7 @@
 #import "Interface.h"
 
 @implementation Interface
--(instancetype)initWithRank:(Rank *)r{
+-(instancetype)initWithRank:(Rank *)r{ //Inicializa a classe
     self = [super init];
     if(self){
         rank = r;
@@ -51,7 +51,7 @@
     }
 }
 
--(void)exibirRank{
+-(void)exibirRank{ //Esse método exibe o rank de jogadores para o usuário
     [self limpaTela];
     NSLog(@"Rank:");
     Fila *jogadores = [rank pegarRankDeJogadores];
@@ -70,14 +70,9 @@
     NSLog(@"Pressione qualquer tecla para continuar.");
     getchar();
     fpurge(stdin);
-
 }
 
-//-(void)exibirSequencia{   // sua funcionalidade foi implementada na propria classe tabuleiro: por falta de um interface grafica, o metodo nao foi necessario
-//    
-//}
-
--(int)exibirEscolhaDeCor{
+-(int)exibirEscolhaDeCor{ //Este método exibe as opções de cor e recebe aquela que o usuário escolher
     
     int opcaoCor;
     do{
@@ -90,7 +85,7 @@
     return opcaoCor;
 }
 
--(void)exibirDerrota:(Jogador *)j :(int)score{
+-(void)exibirDerrota:(Jogador *)j :(int)score{ //Este método exibe a tela de derrota para o usuário, mostrando sua pontuação
     [self limpaTela];
     NSLog(@"Você perdeu %@! Sua pontuação foi de %d pontos!", [j nomeUsuario], score);
     NSLog(@"Pressione qualquer tecla para continuar.");
@@ -98,12 +93,12 @@
     fpurge(stdin);
 }
 
--(void)exibirAvanco: (int)score{
+-(void)exibirAvanco: (int)score{ //Este método exibe a tela de avanço de nível para o usuário
     NSLog(@"Você avançou um nível!");
     sleep(2);
 }
 
--(NSString*)escolherJogador{
+-(NSString*)escolherJogador{ //Este método permite que o usuário digite seu nome para jogar
     char nome[30];
     [self limpaTela];
     NSLog(@"Digite o nome do seu usuário: ");
@@ -113,11 +108,11 @@
     return s;
 }
 
--(void)limpaTela{
+-(void)limpaTela{ //Este método limpa a tela
     NSLog(@"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 }
 
--(void)contagemRegressiva{
+-(void)contagemRegressiva{ //Este método faz a contagem regressiva para o início do jogo
     NSLog(@"O jogo irá começar em:");
     sleep(2);
     NSLog(@"3");

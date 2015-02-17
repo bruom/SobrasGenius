@@ -63,17 +63,4 @@
     return (int)[elementos count];
 }
 
-//-(void)inverter:(Pilha *)p{
-//    while(![self vazio]){
-//        [p empilhar:[self ler]];
-//        [self desenfileirar];
-//    }
-//    
-//    while(![p vazio]){
-//        [self enfileirar:[p topo]];
-//        [p desempilhar];
-//    }
-//    
-//}
-
 @end

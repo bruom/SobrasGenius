@@ -20,8 +20,6 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"Programa iniciado."); //inicio da execução
         [i exibirMenu];
-        
-        
     }
     return 0;
 }
