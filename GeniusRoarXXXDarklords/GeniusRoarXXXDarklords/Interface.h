@@ -20,7 +20,6 @@
 -(instancetype)initWithRank: (Rank *)r;
 -(void)exibirMenu;
 -(void)exibirRank;
--(void)exibirSequencia;
 
 //Exibe o menu para o usuário escolher a cor a ser digitada
 -(int)exibirEscolhaDeCor;

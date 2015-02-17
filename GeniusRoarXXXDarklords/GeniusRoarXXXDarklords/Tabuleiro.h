@@ -29,16 +29,22 @@
 
 -(instancetype)initWithJogador:(NSString*)jogador andRank:(Rank*)ra andInterface:(Interface*)i;
 
+//gera um valor pseudoaleatorio entre 0 e 3, representando o proximo comando que deve ser executado na sequencia
 -(void) gerarComando;
 
+//valida o input do usuario com o esperado: verifica se o input é igual ao proximo elemento na fila do sistema
 -(BOOL) verificarInput:(int)input;
 
+//metodo simples para exibição de cores no console
 -(void) exibirCor;
 
+//contem a logica para uma rodada (uma sequencia de cores)
 -(int) jogarRodada;
 
+//contem a logica para uma partida (varias rodadas, até que o jogador perca)
 -(void) jogarPartida;
 
+//finaliza uma partida, repassando as informações relevantes ao Rank
 -(void) encerrarPartida;
 
 @end

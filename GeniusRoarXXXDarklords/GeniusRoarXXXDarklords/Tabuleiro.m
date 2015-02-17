@@ -43,7 +43,23 @@
 }
 
 -(void)exibirCor{
-    NSLog(@"%@", [fSis ler]);
+    NSNumber *number = (NSNumber *)[fSis ler];
+    int cor = [number intValue];
+    switch((int)cor){
+        case 0:
+            NSLog(@"0 - Vermelho");
+            break;
+        case 1:
+            NSLog(@"1 - Amarelo");
+            break;
+        case 2:
+            NSLog(@"2 - Azul");
+            break;
+        default:
+            NSLog(@"3 - Verde");
+            break;
+    }
+    //NSLog(@"%@", [fSis ler]);
     [fJog enfileirar:[fSis ler]];
     [fSis desenfileirar];
 }

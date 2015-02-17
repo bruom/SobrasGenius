@@ -62,7 +62,7 @@
         int cont = 1;
         while(![jogadores vazio]){
             Jogador *j = (Jogador *)[jogadores ler];
-            NSLog(@"%d - %@ - Highscore: %d", cont, [j nomeUsuario], [j mPontos]);
+            NSLog(@"%d - %@ - Highscore: %d - Partidas jogadas: %d", cont, [j nomeUsuario], [j mPontos], [j qPontos]);
             [jogadores desenfileirar];
             cont++;
         }
@@ -73,12 +73,9 @@
 
 }
 
--(void)exibirSequencia{
-    //Adicionar metodo que faça a exibição das cores
-    //Fazer cores "piscarem"
-    //Exibir as cores ao invés dos numeros (?)
-    
-}
+//-(void)exibirSequencia{   // sua funcionalidade foi implementada na propria classe tabuleiro: por falta de um interface grafica, o metodo nao foi necessario
+//    
+//}
 
 -(int)exibirEscolhaDeCor{
     
