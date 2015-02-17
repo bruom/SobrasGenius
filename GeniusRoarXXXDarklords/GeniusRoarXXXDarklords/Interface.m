@@ -23,7 +23,7 @@
     while(true){
         do{
             [self limpaTela];
-            NSLog(@"Para jogar selecione 1 " "\n""Para ir para o rank selecione 2 ""\n""Para sair selecione 3");
+            NSLog(@"\nPara jogar selecione 1 " "\n""Para ir para o rank selecione 2 ""\n""Para sair selecione 3");
     
             scanf("%d", &opcao);
             fpurge(stdin);
@@ -33,6 +33,7 @@
             case 1:
                 //Entra no jogo
                 tab = [[Tabuleiro alloc]initWithJogador:[self escolherJogador] andRank:rank andInterface:self];
+                [self contagemRegressiva];
                 [tab jogarPartida];
                 break;
             case 2:
@@ -69,7 +70,7 @@
     NSLog(@"Pressione qualquer tecla para continuar.");
     getchar();
     fpurge(stdin);
-    //Adicionar metodo do rank que exiba a ordem    
+
 }
 
 -(void)exibirSequencia{
@@ -83,7 +84,7 @@
     
     int opcaoCor;
     do{
-        NSLog(@"0-VERMELHO   1-AMARELO   2-AZUL   3-VERDE");
+        NSLog(@"\n0-VERMELHO   1-AMARELO   2-AZUL   3-VERDE");
         scanf("%d", &opcaoCor);
         fpurge(stdin);
 
@@ -102,10 +103,10 @@
 
 -(void)exibirAvanco: (int)score{
     NSLog(@"Você avançou um nível!");
+    sleep(2);
 }
 
 -(NSString*)escolherJogador{
-    //falta o rank reconhecer se o usuário já está cadastrado ou não
     char nome[30];
     [self limpaTela];
     NSLog(@"Digite o nome do seu usuário: ");
@@ -117,6 +118,19 @@
 
 -(void)limpaTela{
     NSLog(@"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+}
+
+-(void)contagemRegressiva{
+    NSLog(@"O jogo irá começar em:");
+    sleep(2);
+    NSLog(@"3");
+    sleep(1);
+    NSLog(@"2");
+    sleep(1);
+    NSLog(@"1");
+    sleep(1);
+    NSLog(@"GO");
+    sleep(1);
 }
 
 @end

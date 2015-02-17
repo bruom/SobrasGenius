@@ -15,10 +15,6 @@
 #import "Jogador.h"
 
 @interface Interface : NSObject{
-    /*A interface irá possuir um jogador a
-    Jogador *a;
-     Removi esse atributo. Agora o método de mostrar a derrota recebe o atributo do próprio tabuleiro
-     */
     Rank *rank;
 }
 -(instancetype)initWithRank: (Rank *)r;
@@ -38,5 +34,9 @@
 //Exibe a mensagem para o usuário realizar o cadastro
 -(NSString *)escolherJogador;
 
+//Limpa a tela
 -(void)limpaTela;
+
+//Contagem regressiva para o início do jogo
+-(void)contagemRegressiva;
 @end

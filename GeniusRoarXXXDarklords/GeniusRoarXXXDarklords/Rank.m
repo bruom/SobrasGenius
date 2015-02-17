@@ -70,10 +70,12 @@
         Jogador *j = [rank objectAtIndex:i];
         if([j nomeUsuario]==nome){
             NSLog(@"Nome de usuario encontrado!");
+            sleep(2);
             return i;
         }
     }
     NSLog(@"Nome nao encontrado - novo jogador criado!");
+    sleep(2);
     return -1;
 }
 
