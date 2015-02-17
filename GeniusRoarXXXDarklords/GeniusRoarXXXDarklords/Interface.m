@@ -23,7 +23,7 @@
     while(true){
         do{
             [self limpaTela];
-            NSLog(@"Para jogar selecione 1 Para ir para o rank" "\n"" selecione 2 ""\n""Para sair selecione 3");
+            NSLog(@"Para jogar selecione 1 " "\n""Para ir para o rank selecione 2 ""\n""Para sair selecione 3");
     
             scanf("%d", &opcao);
             fpurge(stdin);
@@ -95,6 +95,9 @@
 -(void)exibirDerrota:(Jogador *)j :(int)score{
     [self limpaTela];
     NSLog(@"Você perdeu %@! Sua pontuação foi de %d pontos!", [j nomeUsuario], score);
+    NSLog(@"Pressione qualquer tecla para continuar.");
+    getchar();
+    fpurge(stdin);
 }
 
 -(void)exibirAvanco: (int)score{
@@ -103,16 +106,13 @@
 
 -(NSString*)escolherJogador{
     //falta o rank reconhecer se o usuário já está cadastrado ou não
-    
     char nome[30];
     [self limpaTela];
     NSLog(@"Digite o nome do seu usuário: ");
     scanf("%s",nome);
     NSString *s = [[NSString alloc]initWithFormat:@"%s", nome];
-    NSString *b=[rank verificaUsuarioExistente:s ];
-    NSLog(@"Usuario: %s", b);
-    
-    return b;
+    NSLog(@"Usuario: %s", nome);
+    return s;
 }
 
 -(void)limpaTela{
