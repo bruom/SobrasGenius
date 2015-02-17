@@ -69,32 +69,21 @@
     
     int cont=0;
     [self gerarComando];
-
-    time_t t1, t2;
-    time(&t1);
-
     int aux = 0;
     while(![fSis vazio]){
-        time(&t2);
-        if((t2 - t1) >= 1){ // Verdadeiro se delta(t) >= 1s
-            [inter limpaTela];
-            NSLog((aux % 2 ? @"@" : @"#")); // intercala os sinais para diferenciar uma cor de outra
-            [self exibirCor];
-            cont++;
-            aux++;
-            time(&t1);
-        }
+        sleep(1);
+
+        [inter limpaTela];
+        NSLog((aux % 2 ? @"@" : @"#")); // intercala os sinais para diferenciar uma cor de outra
+        [self exibirCor];
+        cont++;
+        aux++;
     }
     fAux = fSis;
     fSis = fJog;
     fJog = fAux;
 
-    time(&t1);
-    time(&t2);
-
-    while(t2 - t1 < 1){ // Busy wait
-        time(&t2);
-    }
+    sleep(1);
 
     while(cont>0){
         [inter limpaTela];

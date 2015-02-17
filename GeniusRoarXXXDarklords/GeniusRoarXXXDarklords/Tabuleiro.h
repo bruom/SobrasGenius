@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <time.h>
 #import <stdlib.h>
 #import "Fila.h"
 #import "Cores.h"
