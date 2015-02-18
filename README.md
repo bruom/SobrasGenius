@@ -1,5 +1,8 @@
 # SobrasGenius
-Repositório do projeto do jogo Genius pelo console, em Objective-C, do grupo dos Sobras. Sobre as estruturas de dados utilizados:
+Repositório do projeto do jogo Genius pelo console, em Objective-C, do grupo dos Sobras. 
+André Lucas, Bruno Faganello, Bruno Omella Mainieri, Vitor Kawai Sala, Wellington Pardim
+
+Sobre as estruturas de dados utilizados:
 
 Optamos pelo uso de filas para gerenciar as sequências de comandos do jogo, tanto a gerada pelo sistema quanto a criada a partir dos input do usuário. Usamos duas filas para este fim (e um ponteiro auxiliar para realizar a troca das 2 filas ao fim de uma partida), uma "fila sistema" e um "fila jogador".
 
